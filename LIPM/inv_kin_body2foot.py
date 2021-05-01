@@ -42,7 +42,7 @@ def inv_kin_body2foot(tform, is_left):
 
     th2 = np.arctan2(-np.sqrt(temp), np.sin(th6)*a[0]+np.cos(th6)*a[1])
     th2 += np.pi / 2
-    th1 = np.arctan2(-np.sin(th6)*s[0]-np.cos(th6)*s[1],-np.sin(th6)*n[0]-np.cos(th6)*n[2])
+    th1 = np.arctan2(-np.sin(th6)*s[0]-np.cos(th6)*s[1],-np.sin(th6)*n[0]-np.cos(th6)*n[1])
 
     th345 = np.arctan2(a[2], np.cos(th6)*a[0] - np.sin(th6)*a[1])
     th345 -= np.pi
