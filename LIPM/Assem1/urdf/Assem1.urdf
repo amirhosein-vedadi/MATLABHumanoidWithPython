@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2.6537E-17 -5.9581E-17 -0.19156"
+        rpy="0 0 0" />
+      <mass
+        value="102.94" />
+      <inertia
+        ixx="3.2774"
+        ixy="3.1197E-18"
+        ixz="-4.1361E-17"
+        iyy="1.631"
+        iyz="-8.9222E-17"
+        izz="2.3518" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="r_hip_yaw_Link">
+    <inertial>
+      <origin
+        xyz="-3.2222E-08 -1.4956E-08 -0.059211"
+        rpy="0 0 0" />
+      <mass
+        value="5.7136" />
+      <inertia
+        ixx="0.015796"
+        ixy="1.5808E-08"
+        ixz="-2.5273E-08"
+        iyy="0.016723"
+        iyz="-9.1366E-09"
+        izz="0.016592" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_hip_yaw_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_hip_yaw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_hip_yaw_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.115 -0.35"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="r_hip_yaw_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="r_hip_roll_Link">
+    <inertial>
+      <origin
+        xyz="-1.06042018499508E-08 -3.30072248622831E-05 -1.648603026628E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.07509104489726" />
+      <inertia
+        ixx="0.00246245448952869"
+        ixy="7.01466659228973E-11"
+        ixz="-2.8463855882196E-10"
+        iyy="0.00248949944367348"
+        iyz="-7.56842525918955E-09"
+        izz="0.000496411904463837" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_hip_roll_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_hip_roll_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_hip_roll_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.16"
+      rpy="0 1.5708 0" />
+    <parent
+      link="r_hip_yaw_Link" />
+    <child
+      link="r_hip_roll_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="r_hip_pitch_Link">
+    <inertial>
+      <origin
+        xyz="0.0618953633604962 3.60428534574619E-18 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.837715712282154" />
+      <inertia
+        ixx="0.00254841425528758"
+        ixy="-1.9680800848903E-19"
+        ixz="2.03166084006568E-19"
+        iyy="0.00556069651242986"
+        iyz="2.76690227353587E-20"
+        izz="0.00313402224421008" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_hip_pitch_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_hip_pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_hip_pitch_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="r_hip_roll_Link" />
+    <child
+      link="r_hip_pitch_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="r_knee_pitch_Link">
+    <inertial>
+      <origin
+        xyz="0.0541101677070868 8.51430782767701E-18 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="1.38821464764729" />
+      <inertia
+        ixx="0.00993763170899273"
+        ixy="-6.53979425401478E-19"
+        ixz="-3.31336054487962E-18"
+        iyy="0.013535374958811"
+        iyz="-6.53228606601891E-19"
+        izz="0.00474645926716216" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_knee_pitch_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_knee_pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_knee_pitch_joint"
+    type="continuous">
+    <origin
+      xyz="0.155 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="r_hip_pitch_Link" />
+    <child
+      link="r_knee_pitch_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="r_ankle_pitch_Link">
+    <inertial>
+      <origin
+        xyz="4.2077703543697E-09 6.93870847591361E-05 -2.30867664444134E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.39017867068021" />
+      <inertia
+        ixx="0.00483889685893616"
+        ixy="3.63380231160822E-10"
+        ixz="6.62127640390682E-10"
+        iyy="0.00486694140367542"
+        iyz="1.31447220737603E-08"
+        izz="0.000637647579897119" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_ankle_pitch_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_ankle_pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_ankle_pitch_joint"
+    type="continuous">
+    <origin
+      xyz="0.135 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="r_knee_pitch_Link" />
+    <child
+      link="r_ankle_pitch_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="r_ankle_roll_Link">
+    <inertial>
+      <origin
+        xyz="0.0697919486284369 4.41788551086564E-06 0.0243791690768662"
+        rpy="0 0 0" />
+      <mass
+        value="2.37628263834598" />
+      <inertia
+        ixx="0.0110443082874706"
+        ixy="-1.24373221683551E-07"
+        ixz="-0.00117063162045615"
+        iyy="0.0114633781546838"
+        iyz="-1.19225202595357E-07"
+        izz="0.00532561533802186" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_ankle_roll_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/r_ankle_roll_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_ankle_roll_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="r_ankle_pitch_Link" />
+    <child
+      link="r_ankle_roll_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="l_hip_yaw_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_hip_yaw_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_hip_yaw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_hip_yaw_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.115 -0.35"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="l_hip_yaw_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="l_hip_roll_Link">
+    <inertial>
+      <origin
+        xyz="-1.06042018499508E-08 -3.30072248622693E-05 -1.6486030268555E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.07509104489726" />
+      <inertia
+        ixx="0.00246245448952869"
+        ixy="7.01466655466693E-11"
+        ixz="-2.84638558251497E-10"
+        iyy="0.00248949944367348"
+        iyz="-7.56842525943005E-09"
+        izz="0.000496411904463837" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_hip_roll_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_hip_roll_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_hip_roll_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.16"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="l_hip_yaw_Link" />
+    <child
+      link="l_hip_roll_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="l_hip_pitch_Link">
+    <inertial>
+      <origin
+        xyz="0.0618953633604965 1.45466817692286E-17 9.71445146547012E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.837715712282153" />
+      <inertia
+        ixx="0.00254841425528758"
+        ixy="1.02442318608595E-19"
+        ixz="1.29027140607899E-18"
+        iyy="0.00556069651242986"
+        iyz="1.87570031486169E-20"
+        izz="0.00313402224421008" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_hip_pitch_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_hip_pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_hip_pitch_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="l_hip_roll_Link" />
+    <child
+      link="l_hip_pitch_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="l_knee_pitch_Link">
+    <inertial>
+      <origin
+        xyz="0.0541101677070869 1.27900534879162E-18 9.71445146547012E-17"
+        rpy="0 0 0" />
+      <mass
+        value="1.38821464764729" />
+      <inertia
+        ixx="0.00993763170899274"
+        ixy="-2.55076596148508E-19"
+        ixz="6.92200318920164E-19"
+        iyy="0.013535374958811"
+        iyz="-4.18081372552263E-19"
+        izz="0.00474645926716218" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_knee_pitch_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_knee_pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_knee_pitch_joint"
+    type="continuous">
+    <origin
+      xyz="0.155 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="l_hip_pitch_Link" />
+    <child
+      link="l_knee_pitch_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="l_ankle_pitch_Link">
+    <inertial>
+      <origin
+        xyz="4.2077703543697E-09 6.93870847590972E-05 -2.30867664374745E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.39017867068021" />
+      <inertia
+        ixx="0.00483889685893615"
+        ixy="3.63380231159723E-10"
+        ixz="6.62127639821811E-10"
+        iyy="0.00486694140367541"
+        iyz="1.31447220728015E-08"
+        izz="0.000637647579897118" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_ankle_pitch_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_ankle_pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_ankle_pitch_joint"
+    type="continuous">
+    <origin
+      xyz="0.135 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="l_knee_pitch_Link" />
+    <child
+      link="l_ankle_pitch_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="l_ankle_roll_Link">
+    <inertial>
+      <origin
+        xyz="0.0697919486284372 4.4178855109489E-06 0.0243791690768663"
+        rpy="0 0 0" />
+      <mass
+        value="2.37628263834598" />
+      <inertia
+        ixx="0.0110443082874705"
+        ixy="-1.24373221683566E-07"
+        ixz="-0.00117063162045615"
+        iyy="0.0114633781546838"
+        iyz="-1.19225202594142E-07"
+        izz="0.00532561533802184" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_ankle_roll_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/l_ankle_roll_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_ankle_roll_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="l_ankle_pitch_Link" />
+    <child
+      link="l_ankle_roll_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
