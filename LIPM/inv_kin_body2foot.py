@@ -40,7 +40,7 @@ def inv_kin_body2foot(tform, is_left):
         temp = 0
         print('Waning: Unable to reach desired end-effector position/orientation')
 
-    th2 = arctan2(-np.sqrt(temp), np.sin(th6)*a[0]+np.cos(th6)*a[1])
+    th2 = np.arctan2(-np.sqrt(temp), np.sin(th6)*a[0]+np.cos(th6)*a[1])
     th2 += np.pi / 2
     th1 = np.arctan2(-np.sin(th6)*s[0]-np.cos(th6)*s[1],-np.sin(th6)*n[0]-np.cos(th6)*n[2])
 
