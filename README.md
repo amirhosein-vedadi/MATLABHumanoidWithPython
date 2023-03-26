@@ -1,2 +1,2 @@
-# MATLABHumanoidWithPython
-MATLAB humanoid example implemented in Python
+# Page 1
+
